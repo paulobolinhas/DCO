@@ -1,5 +1,3 @@
-
-
 Caso de Uso: Registar Ajuda
 Ator Principal: Voluntario
 
@@ -12,33 +10,37 @@ Pós-Condições: a ajuda é confirmada através do envio do código associado a
 CONTRATOS: 
 
     identificaVoluntario(contacto)
-        pre-condições:
-            N/A
+        pré-condições:
+            - N/A
         pós-condições:
-            v:Voluntario esta autenticado
+            - v:Voluntario está autenticado
 
     indicaNumPessoas(num)
-        pre-condições:
-            v:Voluntario corrente pretende oferecer a:Alojamento = True.
-        pos-condições:
-            e criado a:Alojamento associado a v corrente tal que a.num = num.
+        pré-condições:
+            - v:Voluntario corrente pretende oferecer a:Alojamento = True.
+        pós-condições:
+            - criado a:Alojamento associado a v corrente tal que a.num = num.
 
     indicaRegiao(regiao)
-        pre-condições:
-            existe lr:ListadeRegioes != null e regiao pertence a lr;
-            existe v:Voluntario corrente associado a a:Alojamento corrente.
-        pos-condições:
-            e criado r:Regiao e v corrente indica r:Regiao = regiao (+ Nota 1).
+        pré-condições:
+            - existe lr:ListaRegioes != null 
+            - existe r:Região pertencente a lr; 
+            ---(é necessário criar a lista no modelo de iteração?)---
+            - existe v:Voluntario corrente associado a a:Alojamento corrente.
+        pós-condições:
+            - r:Regiao é associado a a:Alojamento tal que a.regiao = r:
+            ---(o catalogo de regioes supostamente é, por exemplo, todos os distritos de portugal. Assim, a regiao indicada precisa
+            coincidir com uma que esteja na lista de regioes)---
 
     indicaDescItem(desc)
-        pre-condições:
-            v:Voluntario corrente pretende oferecer i:Item = True.
-        pos-condições:
-            e criado i:Item associado a v corrente tal que i.desc = desc.
+        pré-condições:
+            - v:Voluntario corrente pretende oferecer i:Item = True.
+        pós-condições:
+            - criado i:Item associado a v corrente tal que i.desc = desc.
 
     indicaCódigo (codigo)
-        pre-condições:
-            v:Voluntario corrente associado a a:Alojamento corrente = True || v:Voluntario corrente associado a i:Item corrente = True;
-            existe s:Sms enviado para v:Voluntario corrente.
+        pré-condições:
+            - v:Voluntario corrente associado a a:Alojamento corrente || v:Voluntario corrente associado a i:Item corrente;
+            - existe s:Sms enviado para v:Voluntario corrente.
         pos-condições:
-            retorna s.codigo = codigo.
+            - retornado s.codigo = codigo.
