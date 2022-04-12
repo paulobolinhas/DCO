@@ -1,0 +1,44 @@
+
+
+Caso de Uso: Registar Ajuda
+Ator Principal: Voluntario
+
+Pré-Condições: N/A
+
+Pós-Condições: a ajuda é confirmada através do envio do código associado ao SMS
+
+--
+
+CONTRATOS: 
+
+    identificaVoluntario(contacto)
+        pre-condições:
+            N/A
+        pós-condições:
+            v:Voluntario esta autenticado
+
+    indicaNumPessoas(num)
+        pre-condições:
+            v:Voluntario corrente pretende oferecer a:Alojamento = True.
+        pos-condições:
+            e criado a:Alojamento associado a v corrente tal que a.num = num.
+
+    indicaRegiao(regiao)
+        pre-condições:
+            existe lr:ListadeRegioes != null e regiao pertence a lr;
+            existe v:Voluntario corrente associado a a:Alojamento corrente.
+        pos-condições:
+            e criado r:Regiao e v corrente indica r:Regiao = regiao (+ Nota 1).
+
+    indicaDescItem(desc)
+        pre-condições:
+            v:Voluntario corrente pretende oferecer i:Item = True.
+        pos-condições:
+            e criado i:Item associado a v corrente tal que i.desc = desc.
+
+    indicaCódigo (codigo)
+        pre-condições:
+            v:Voluntario corrente associado a a:Alojamento corrente = True || v:Voluntario corrente associado a i:Item corrente = True;
+            existe s:Sms enviado para v:Voluntario corrente.
+        pos-condições:
+            retorna s.codigo = codigo.
