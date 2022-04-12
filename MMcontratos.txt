@@ -38,9 +38,9 @@ CONTRATOS:
         pós-condições:
             - criado i:Item associado a v corrente tal que i.desc = desc.
 
-    indicaCódigo (codigo)
+    indicaCodigo (codigo)
         pré-condições:
             - v:Voluntario corrente associado a a:Alojamento corrente || v:Voluntario corrente associado a i:Item corrente;
             - existe s:Sms enviado para v:Voluntario corrente.
         pos-condições:
-            - retornado s.codigo = codigo.
+            - e retornado s.codigo = codigo. (sem certeza)
