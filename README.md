@@ -1,8 +1,8 @@
 # Migrant-Matcher
 
-  A aplicação MigrantMatcher está a ser desenvolvida com o objectivo de facilitar a ajuda de migrantes em massa. Em situações de guerra, vulcões ou outras calamidades, esta aplicação irá ajudar a que os migrantes consigam receber ajuda (quer em items, quer em alojamento) de forma mais eficaz.
+A aplicação MigrantMatcher está a ser desenvolvida com o objectivo de facilitar a ajuda de migrantes em massa. Em situações de guerra, vulcões ou outras calamidades, esta aplicação irá ajudar a que os migrantes consigam receber ajuda (quer em items, quer em alojamento) de forma mais eficaz.
 
-Caso de Uso 1: Registar ajuda
+- Caso de Uso 1: Registar ajuda
 Este caso de uso permite a voluntários disponibilizar um tipo de ajuda na plataforma.
 
 Descrição do Caso de Uso:
@@ -18,7 +18,7 @@ O voluntário indica a descrição do item.
 Em qualquer dos casos, o sistema envia uma notificação por SMS para o voluntário com um código único.
 O utilizador indica ao sistema o código único para confirmar a oferta de ajuda.
 
-Caso de Uso 2: Procurar Ajuda
+- Caso de Uso 2: Procurar Ajuda
 Este caso de uso permite a migrantes procurar e aceitar ajudas oferecidas.
 
 Descrição do Caso de Uso:
