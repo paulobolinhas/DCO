@@ -38,6 +38,12 @@ O sistema devolve a lista de regiões no país.
 O migrante indica a região para onde se vai mover.
 O sistema devolve uma lista de ajudas possíveis (tanto alojamentos nessa região, como items).
 
+- Extensão
+
+5a:
+5. O Sistema indica que não existe nenhuma ajuda nessa região.
+6. O migrante indica que pretende ser notificado quando existir nessa região.
+
 - FASE 2 --------------------------
 
 Nesta fase 2 do project, pretendemos implementar o projecto numa perspectiva orientada a objectos. De momento, queremos apenas ter objectos em memória e não há necessidade de base de dados ou persistência.
@@ -59,9 +65,3 @@ O sistema regista esta informação.
 Os dois passos anteriores podem ser repetidos tantas vezes quantas o migrante necessitar.
 Finalmente, o migrante indica que pretende confirmar.
 O sistema regista a atribuição de ajudas a esse migrante, e envia uma SMS aos voluntários que ofereceram as respectivas ajudas.
-
-Extensão
-
-5a:
-5. O Sistema indica que não existe nenhuma ajuda nessa região.
-6. O migrante indica que pretende ser notificado quando existir nessa região.
