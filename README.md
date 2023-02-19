@@ -1,6 +1,6 @@
 # Migrant-Matcher
 
-- FASE 1
+- FASE 1 --------------------------
 
 A aplicação MigrantMatcher está a ser desenvolvida com o objectivo de facilitar a ajuda de migrantes em massa. Em situações de guerra, vulcões ou outras calamidades, esta aplicação irá ajudar a que os migrantes consigam receber ajuda (quer em items, quer em alojamento) de forma mais eficaz.
 
@@ -38,7 +38,7 @@ O sistema devolve a lista de regiões no país.
 O migrante indica a região para onde se vai mover.
 O sistema devolve uma lista de ajudas possíveis (tanto alojamentos nessa região, como items).
 
-- FASE 2
+- FASE 2 --------------------------
 
 Nesta fase 2 do project, pretendemos implementar o projecto numa perspectiva orientada a objectos. De momento, queremos apenas ter objectos em memória e não há necessidade de base de dados ou persistência.
 
