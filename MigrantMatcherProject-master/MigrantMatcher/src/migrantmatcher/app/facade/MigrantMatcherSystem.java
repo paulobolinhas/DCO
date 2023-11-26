@@ -4,7 +4,7 @@ import java.util.List;
 import java.util.Optional;
 import java.util.Scanner;
 
-import com.pidgeonsmssender.sdk.PidgeonSMSSender;
+// import com.pidgeonsmssender.sdk.PidgeonSMSSender;
 
 import migrantmatcher.app.domain.Ajuda;
 import migrantmatcher.app.domain.Alojamento;
@@ -36,7 +36,7 @@ public class MigrantMatcherSystem implements Observer<RegiaoAvailableEvent> {
 	private CatalogoRegiao catRegiao;
 	private CatalogoMigrante catMigrante;
 	private ISortAjudaStrategy ordStrategy;
-	private PidgeonSMSSender smsService;
+	// private PidgeonSMSSender smsService;
 	private String codeToSend;
 
 	/**
@@ -49,7 +49,7 @@ public class MigrantMatcherSystem implements Observer<RegiaoAvailableEvent> {
 		this.catRegiao = CatalogoRegiao.getInstance();
 		this.catAjuda = CatalogoAjuda.getInstance();
 		this.catMigrante = CatalogoMigrante.getInstance();
-		this.smsService = new PidgeonSMSSender();
+		// this.smsService = new PidgeonSMSSender();
 
 //		this.sensores.add();
 
@@ -171,7 +171,7 @@ public class MigrantMatcherSystem implements Observer<RegiaoAvailableEvent> {
 
 	public void sendSMS() {
 		this.codeToSend = generateRandomCode(3);
-		smsService.send("Codigo de verificao", codeToSend);
+		// smsService.send("Codigo de verificao", codeToSend);
 	}
 
 	public String getPrivateCode() {
@@ -192,7 +192,7 @@ public class MigrantMatcherSystem implements Observer<RegiaoAvailableEvent> {
 
 	@Override
 	public void receiveEvent(RegiaoAvailableEvent e) {
-		this.smsService.send("Atualizacao de Ajudas", "Um Alojamento na regiao que pediu (" + e.getName() + ") ja esta disponivel ");
+		// this.smsService.send("Atualizacao de Ajudas", "Um Alojamento na regiao que pediu (" + e.getName() + ") ja esta disponivel ");
 
 	}
 
