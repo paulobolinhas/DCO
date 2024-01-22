@@ -5,6 +5,7 @@
 The MigrantMatcher app is being developed with the aim of facilitating mass migrant aid. In situations of war, volcanoes or other calamities, this application will help migrants to receive help (whether in items or accommodation) more effectively.
 
 - Use Case 1: Register help
+  
 This use case allows volunteers to provide a type of help on the platform.
 
 Use Case Description:
@@ -21,6 +22,7 @@ In either case, the system sends an SMS notification to the volunteer with a uni
 The user tells the system the unique code to confirm the offer of help.
 
 - Use Case 2: Seek Help
+  
 This use case allows migrants to search for and accept offered help.
 
 Use Case Description:
@@ -55,7 +57,7 @@ The project will be evaluated on two criteria:
 
 - Non-Functional Assessment: The quality of the design and organization of the code will be assessed, with particular emphasis on the applied Usage Standards. In addition to the GRASP standards, we will take into account the Façade, DTO, Strategy, Adapter, Pure Fabrication, Factory, Singleton, Composite, Builder, Chain of Command and Observer standards. Of these patterns, you should only use those that make sense. The granularity of git commits will also be evaluated.
 
-- Changes in use cases
+- Changes in use cases:
 You must take into account the following additional requirements:
 
 The system must be configured with ways to order available aid. One of the possible ways is by increasing availability date. Another way will be first by accommodation, then by other items, ordered within each category randomly.
