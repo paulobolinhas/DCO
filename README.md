@@ -1,6 +1,6 @@
-# Migrant-Matcher
+## Migrant-Matcher
 
-- PHASE 1 --------------------------
+# PHASE 1
 
 The MigrantMatcher app is being developed with the aim of facilitating mass migrant aid. In situations of war, volcanoes or other calamities, this application will help migrants to receive help (whether in items or accommodation) more effectively.
 
@@ -46,7 +46,7 @@ The system returns a list of possible help (both accommodation in that region an
 5. The System indicates that there is no help in this region.
 6. The migrant indicates that he wants to be notified when he exists in that region.
 
-- LEVEL 2 --------------------------
+# PHASE 2
 
 In this phase 2 of the project, we intend to implement the project from an object-oriented perspective. At the moment, we just want to have objects in memory and there is no need for a database or persistence.
 
