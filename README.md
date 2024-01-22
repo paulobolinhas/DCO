@@ -1,67 +1,67 @@
 # Migrant-Matcher
 
-- FASE 1 --------------------------
+- PHASE 1 --------------------------
 
-A aplicação MigrantMatcher está a ser desenvolvida com o objectivo de facilitar a ajuda de migrantes em massa. Em situações de guerra, vulcões ou outras calamidades, esta aplicação irá ajudar a que os migrantes consigam receber ajuda (quer em items, quer em alojamento) de forma mais eficaz.
+The MigrantMatcher app is being developed with the aim of facilitating mass migrant aid. In situations of war, volcanoes or other calamities, this application will help migrants to receive help (whether in items or accommodation) more effectively.
 
-- Caso de Uso 1: Registar ajuda
-Este caso de uso permite a voluntários disponibilizar um tipo de ajuda na plataforma.
+- Use Case 1: Register help
+This use case allows volunteers to provide a type of help on the platform.
 
-Descrição do Caso de Uso:
+Use Case Description:
 
-O voluntário identifica-se com o seu contacto telefónico.
-O sistema pede ao voluntário para indicar o tipo de ajuda que pretende oferecer.
-No caso de o voluntário pretender oferecer um alojamento,
-O voluntário indicando o número de pessoas que esse alojamento alberga.
-O sistema devolve a lista de regiões no país.
-O voluntário indica a região onde se encontra o alojamento.
-No caso de o voluntário pretender oferecer um item (por exemplo, colchões, roupas, brinquedos),
-O voluntário indica a descrição do item.
-Em qualquer dos casos, o sistema envia uma notificação por SMS para o voluntário com um código único.
-O utilizador indica ao sistema o código único para confirmar a oferta de ajuda.
+The volunteer identifies himself with his telephone number.
+The system asks the volunteer to indicate the type of help they intend to offer.
+If the volunteer intends to offer accommodation,
+The volunteer indicating the number of people that this accommodation houses.
+The system returns the list of regions in the country.
+The volunteer indicates the region where the accommodation is located.
+If the volunteer intends to offer an item (e.g. mattresses, clothes, toys),
+The volunteer indicates the description of the item.
+In either case, the system sends an SMS notification to the volunteer with a unique code.
+The user tells the system the unique code to confirm the offer of help.
 
-- Caso de Uso 2: Procurar Ajuda
-Este caso de uso permite a migrantes procurar e aceitar ajudas oferecidas.
+- Use Case 2: Seek Help
+This use case allows migrants to search for and accept offered help.
 
-Descrição do Caso de Uso:
+Use Case Description:
 
-Alternativamente,
-O migrante indica que pretende registar-se individualmente, indicando o seu nome e número de telefone. 
-Ou indica que pretende registar a sua família, indicando o número de pessoas.
-Nesse caso, o sistema pergunta o nome e contacto do cabeça de casal.
-O migrante indica o nome e contacto correspondente.
-O sistema pergunta os dados de outro membro da família.
-O migrante indica o nome do outro membro.
-Os dois últimos passos podem ser repetidos enquanto o migrante entender.
-De seguida, o migrante pede a lista de regiões para onde se poderá mover.
-O sistema devolve a lista de regiões no país.
-O migrante indica a região para onde se vai mover.
-O sistema devolve uma lista de ajudas possíveis (tanto alojamentos nessa região, como items).
+Alternatively,
+The migrant indicates that he wishes to register individually, indicating his name and telephone number.
+Or indicate that you want to register your family, indicating the number of people.
+In this case, the system asks for the name and contact details of the head of the couple.
+The migrant indicates the name and corresponding contact.
+The system asks for data from another family member.
+The migrant indicates the name of the other member.
+The last two steps can be repeated as long as the migrant understands.
+The migrant then asks for a list of regions to which they can move.
+The system returns the list of regions in the country.
+The migrant indicates the region to which he will move.
+The system returns a list of possible help (both accommodation in that region and items).
 
-- Extensão
+- Extension
 
 5a:
-5. O Sistema indica que não existe nenhuma ajuda nessa região.
-6. O migrante indica que pretende ser notificado quando existir nessa região.
+5. The System indicates that there is no help in this region.
+6. The migrant indicates that he wants to be notified when he exists in that region.
 
-- FASE 2 --------------------------
+- LEVEL 2 --------------------------
 
-Nesta fase 2 do project, pretendemos implementar o projecto numa perspectiva orientada a objectos. De momento, queremos apenas ter objectos em memória e não há necessidade de base de dados ou persistência.
+In this phase 2 of the project, we intend to implement the project from an object-oriented perspective. At the moment, we just want to have objects in memory and there is no need for a database or persistence.
 
-- Objectivos:
-O projecto será avaliado em dois critérios:
+- Objectives:
+The project will be evaluated on two criteria:
 
-- Avaliação Funcional: O projecto será avaliado conforme a riqueza dos testes JUnit desenhados para testar os dois casos de uso (identificados na meta 1)
+- Functional Assessment: The project will be evaluated according to the richness of the JUnit tests designed to test the two use cases (identified in goal 1)
 
-- Avaliação Não-Funcional: A qualidade do desenho e organização do código será avaliado, com particular ênfase aos Padrões de Uso aplicados. Teremos em consideração, para além dos padrões GRASP, os padrões Façade, DTO, Strategy, Adapter, Pure Fabrication, Factory, Singleton, Composite, Builder, Chain of Command e Observer. Destes padrões, deverá usar apenas que fizerem sentido. Será também avaliada a granulosidade dos commits do git.
+- Non-Functional Assessment: The quality of the design and organization of the code will be assessed, with particular emphasis on the applied Usage Standards. In addition to the GRASP standards, we will take into account the Façade, DTO, Strategy, Adapter, Pure Fabrication, Factory, Singleton, Composite, Builder, Chain of Command and Observer standards. Of these patterns, you should only use those that make sense. The granularity of git commits will also be evaluated.
 
-- Alterações nos casos de uso
-Deverá ter em consideração os seguintes requisitos adicionais:
+- Changes in use cases
+You must take into account the following additional requirements:
 
-O sistema deve ser configurado com formas de ordenar as ajudas disponíveis. Uma das formas possíveis é por data de disponibilização crescente. Outra forma será primeiro por alojamentos, depois pelos outros items, ordenados dentro de cada categoria de forma aleatória.
-Devem ser incorporados os fornecedores de gateway SMS disponibilizados no ficheiro em anexo. Poderá criar outros, se se revelarem necessários para os testes.
-O migrante escolhe a ajuda de que pretende usufruir de entre dessas listadas.
-O sistema regista esta informação.
-Os dois passos anteriores podem ser repetidos tantas vezes quantas o migrante necessitar.
-Finalmente, o migrante indica que pretende confirmar.
-O sistema regista a atribuição de ajudas a esse migrante, e envia uma SMS aos voluntários que ofereceram as respectivas ajudas.
+The system must be configured with ways to order available aid. One of the possible ways is by increasing availability date. Another way will be first by accommodation, then by other items, ordered within each category randomly.
+The SMS gateway providers provided in the attached file must be incorporated. You can create others if they prove necessary for the tests.
+The migrant chooses the help he wants to receive from those listed.
+The system records this information.
+The two previous steps can be repeated as many times as the migrant needs.
+Finally, the migrant indicates that he wants to confirm.
+The system records the granting of aid to that migrant, and sends an SMS to the volunteers who offered their respective aid.
